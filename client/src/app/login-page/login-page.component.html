@@ -18,7 +18,8 @@
               Required
             </mat-error>
             <mat-error
-              *ngIf="!loginFormGroup.controls.email.hasError('required')">
+              *ngIf="!loginFormGroup.controls.email.hasError('required') &&
+              loginFormGroup.controls.email.hasError('email')">
               Invalid email address
             </mat-error>
           </mat-form-field>
@@ -32,6 +33,17 @@
             <mat-error
               *ngIf="loginFormGroup.controls.password.hasError('required')">
               Required
+            </mat-error>
+            <mat-error
+              *ngIf="!loginFormGroup.controls.password.hasError('required') &&
+                loginFormGroup.controls.password.hasError('minlength')">
+              Password too short
+            </mat-error>
+            <mat-error
+              *ngIf="!loginFormGroup.controls.password.hasError('required') &&
+                !loginFormGroup.controls.password.hasError('minlength') &&
+                loginFormGroup.controls.password.hasError('pattern')">
+              Password should contain at least one digit
             </mat-error>
           </mat-form-field>
         </mat-card-content>

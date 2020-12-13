@@ -1,4 +1,5 @@
 module.exports = function controller (input) {
+  input = input.toUpperCase()
   let out = ''
   let last
   let count = 0
