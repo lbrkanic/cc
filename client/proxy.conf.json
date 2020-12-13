@@ -1,0 +1,10 @@
+{
+  "/ws": {
+    "target": "http://localhost:3000",
+    "pathRewrite": {
+      "^/ws" : ""
+    },
+    "secure": false,
+    "logLevel": "debug"
+  }
+}
