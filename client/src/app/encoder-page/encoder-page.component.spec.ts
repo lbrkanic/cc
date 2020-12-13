@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { EncoderPageComponent } from './encoder-page.component';
 
-describe('EncoderPageComponent', () => {
+xdescribe('EncoderPageComponent', () => {
   let component: EncoderPageComponent;
   let fixture: ComponentFixture<EncoderPageComponent>;
 
