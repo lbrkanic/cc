@@ -1,6 +1,7 @@
 # code-challenge
 
 Tested with node v10.16.3
+
 Frontend built with Angular 11
 
 ## Starting the server
