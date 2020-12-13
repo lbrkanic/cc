@@ -17,3 +17,5 @@ npm test
 cd client
 npm start
 ```
+## Open the web application
+The app is running on the 4200 port: [http://localhost:4200](http://localhost:4200)
